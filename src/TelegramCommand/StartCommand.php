@@ -32,6 +32,11 @@ class StartCommand extends AbstractCommand
 		
         $telegram = $repository->findOneBy(array('validationToken' => explode(' ', $update->getMessage()->getText())[1]));
         
+		if (!$telegram)
+		{
+			return;
+		}
+		
         $user = $update->getMessage()->getFrom();
         $telegram->setDisplayName($user->getFirstName() . ' ' . $user->getLastName());
         $telegram->setUsername($user->getUsername());
