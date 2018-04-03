@@ -8,7 +8,7 @@ use Ialert\TelegramBotBundle\Telegram\TelegramApi;
 use Symfony\Bridge\Doctrine\RegistryInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
-class HomeController extends Controller
+class CatchallController extends Controller
 {
     private $telegramApi;
     private $commandChain;
