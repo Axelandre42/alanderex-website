@@ -1,0 +1,6 @@
+ialert_telegram_bot:
+    api:
+        username: "AlanDerex_bot"
+        token: "410627481:AAGgxTzD7-SjxqG0TN6yv3_Ywde9fkYLA6Q"
+    tracker:
+        token: null

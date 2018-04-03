@@ -1,0 +1,23 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+{{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
+    {{ form_widget(form) }}
+    <div>
+        <input type="submit" class="btn btn-primary" value="{{ 'registration.submit'|trans }}" />
+    </div>
+{{ form_end(form) }}
+
+<script type="text/javascript">
+    window.setInterval(function() {
+        var form = $(this).closest('form')
+        $.ajax({
+            url: form.action,
+            type: form.method,
+            data: form.serialize(),
+            success: function(html) {
+                $("#fos_user_registration_form_telegram_username").replaceWith($(html).find("#fos_user_registration_form_telegram_username"));
+                $("#fos_user_registration_form_telegram_displayName").replaceWith($(html).find("#fos_user_registration_form_telegram_displayName"));
+            }
+        });
+    }, 8000);
+</script>

@@ -1,0 +1,26 @@
+{% extends "layout.html.twig" %}
+
+{% block title %}Meetings | {{ parent() }}{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col">
+            <h3>Meetings</h3>
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Gearblast UK 2018</h4>
+                    <p class="card-text text-justify">
+                        This meeting is an international event happening in Birmingham, UK.
+                        This event is intended to allow gearheads meeting in a nice space.
+                        More informations on their website.
+                    </p>
+                    <a href="http://gearblast.co.uk/" class="btn btn-primary">Gearblast UK website</a>
+                </div>
+                <div class="card-footer text-success">
+                    Registered!
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

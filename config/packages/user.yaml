@@ -1,0 +1,13 @@
+fos_user:
+    db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
+    firewall_name: main
+    user_class: App\Entity\User
+    from_email:
+        address: "alanderex.belgium@gmail.com"
+        sender_name: "Alan Derex"
+    registration:
+        form:
+            type: App\Form\UserType
+            validation_groups: [Registration, Default]
+        confirmation:
+            enabled: false
