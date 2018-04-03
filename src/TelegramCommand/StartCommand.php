@@ -28,6 +28,8 @@ class StartCommand extends AbstractCommand
         $repository = $this->doctrine->getRepository(Telegram::class);
         $em = $this->doctrine->getEntityManager();
         
+		dump(explode(' ', $update->getMessage()->getText()));
+		
         $telegram = $repository->findOneBy(array('validationToken' => explode(' ', $update->getMessage()->getText())[1]));
         
         $user = $update->getMessage()->getFrom();
