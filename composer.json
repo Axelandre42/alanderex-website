@@ -22,7 +22,6 @@
         "symfony/flex": "^1.0",
         "symfony/form": "^4.0",
         "symfony/framework-bundle": "^4.0",
-        "symfony/lts": "^4@dev",
         "symfony/monolog-bundle": "^3.1",
         "symfony/orm-pack": "*",
         "symfony/process": "^4.0",
@@ -35,7 +34,7 @@
         "symfony/validator": "^4.0",
         "symfony/var-dumper": "^4.0",
         "symfony/web-link": "^4.0",
-        "symfony/webpack-encore-pack": "*",
+        "symfony/webpack-encore-bundle": "*",
         "symfony/yaml": "^4.0"
     },
     "require-dev": {

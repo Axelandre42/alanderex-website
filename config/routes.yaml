@@ -10,7 +10,7 @@ app_meetings:
     path: /meetings
     controller: App\Controller\HomeController::meetings
 
-app_meetings:
+app_telegram_update:
     path: /telegram_update
     controller: App\Controller\CatchallController::telegramUpdate
 

@@ -7,6 +7,7 @@ use Ialert\TelegramBotBundle\Telegram\Command\CommandChain;
 use Ialert\TelegramBotBundle\Telegram\TelegramApi;
 use Symfony\Bridge\Doctrine\RegistryInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Request;
 
 class CatchallController extends Controller
 {
